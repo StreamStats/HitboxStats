@@ -9,7 +9,7 @@ $(document).ready(function(event){
    });
 });
 function getData(){
-    $.get('https://api.hitbox.tv/user/' + $('#inputText').val(), "", function(data){
+   $.getJSON('https://api.hitbox.tv/user/' + $('#inputText').val(), function(data){
          
          var Username = data.user_name;
          var avatar = data.user_logo_small;
