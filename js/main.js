@@ -11,10 +11,11 @@ $(document).ready(function(event){
 function getData(){
     $.get('https://api.hitbox.tv/user/' + $('#inputText').val(), "", function(data){
          
-         var Username = data['user_name'];
-         var followers = data['followers'];
-         var Broadcaster = data['user_is_broadcaster'];
-         var joined = data['live_since'];
+         var Username = data.user_name;
+         var avatar = data.user_logo_small;
+         var followers = data.followers;
+         var Broadcaster = data.user_is_broadcaster;
+         var joined = data.live_since;
         var html = '<center><img src="' + avatar + '"width="100px" height="100px" style="border:3px solid red">';
         html += '<h1><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-success">Followers:' + followers + '</b>';
