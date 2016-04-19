@@ -15,7 +15,7 @@ function getData(){
          var followers = data.followers;
          var Broadcaster = data.user_is_broadcaster;
          var joined = data.live_since;
-        html += '<h1><span class="label label-success">' + Username + '</h1>';
+        var html += '<h1><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-success">Followers:' + followers + '</b>';
          html += '<br><b><span class="label label-success">Broadcaster:' + Broadcaster + '</b>';
          html += "<br>";
